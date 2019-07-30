@@ -26,7 +26,7 @@ module.exports = {
   generate: function (config) {
 
     var options = {
-      uri: 'https://api.github.com/repos/' + config.owner + '/' + config.repo + '/issues',
+      uri: 'https://api.github.com/repos/' + config.owner + '/' + config.repo + '/issues?state=all',
       headers: {
         'User-Agent': 'github-issue-reports'
       }
